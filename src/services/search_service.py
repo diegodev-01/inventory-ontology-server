@@ -1,4 +1,5 @@
 from src.utils.ontology_loader import load_ontology
+from src.utils.url_parser import url_parser
 
 g = load_ontology()
 
@@ -20,6 +21,10 @@ def search_ontology_by_label(query: str):
 
     for row in g.query(sparql):
         results.append(
-            {"sujeto": str(row.s), "predicado": str(row.p), "objeto": str(row.o)}
+            {
+                "sujeto": url_parser(str(row.s)),
+                "predicado": url_parser(str(row.p)),
+                "objeto": url_parser(str(row.o)),
+            }
         )
     return results
