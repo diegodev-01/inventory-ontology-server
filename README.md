@@ -42,6 +42,7 @@ cd inventory-ontology-server
 
 # Crear entorno virtual (si no tienen esto, se les instalarán las dependencias globalmente)
 python -m venv venv
+# Levantar el entorno virtual
 # En Linux
 source venv/bin/activate
 # En Windows
