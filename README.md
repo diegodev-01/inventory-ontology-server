@@ -80,24 +80,27 @@ src/data/ontología.rdf
 Ejemplo de Endpoint
 
 ``` bash
-GET /buscar?query=existencia
+GET /api/search?query=existencia
 ```
 
 devuelve una lista de existencias de la ontologia que sean existencias del almacen
 
 {
-  "resultados": [
+  "results": [
     {
-      "uri": "http://example.org/ontology#Existencia",
-      "name": "Item001"
+      "sujeto": "Supervisor_001",
+      "predicado": "Permisos",
+      "objeto": "Historicos\nExistencias\nSeguridad\nTransporte"
     },
     {
-      "uri": "http://example.org/ontology#Existencia",
-      "name": "Item002"
+      "sujeto": "Item_001",
+      "predicado": "type",
+      "objeto": "Existencias"
     },
     {
-      "uri": "http://example.org/ontology#Existencia",
-      "name": "Item003"
-    }
+      "sujeto": "Operador_001",
+      "predicado": "Permisos",
+      "objeto": "Existencias\nHistorial\nTransporte"
+    },
   ]
 }
