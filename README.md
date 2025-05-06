@@ -35,6 +35,7 @@ inventory-ontology-server/
 ## Instalación
 
 ```bash
+
 # Clonar el repositorio
 git clone https://github.com/tuusuario/inventory-ontology-server.git
 cd inventory-ontology-server
