@@ -9,7 +9,7 @@ app.include_router(search_router.router, prefix="/api", tags=["search"])
 origins = [
     "http://localhost:3000",
     "http://localhost:5173",
-    "https://inventory-ontology-web.pages.dev/",
+    "https://inventory-ontology-web.pages.dev",
 ]
 
 app.add_middleware(
