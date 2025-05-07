@@ -8,16 +8,18 @@ app.include_router(search_router.router, prefix="/api", tags=["search"])
 
 origins = [
     "http://localhost:3000",
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://inventory-ontology-web.pages.dev/",
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins= origins,
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @app.get("/")
 async def root():
