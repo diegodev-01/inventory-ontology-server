@@ -1,10 +1,9 @@
 from src.utils.ontology_loader import load_ontology
 from src.utils.url_parser import url_parser
 
-g = load_ontology()
 
-
-def search_ontology_by_label(query: str):
+def search_ontology_by_label(query: str, path: str = "../data/ontology.rdf"):
+    g = load_ontology(file_path=path)
     query_lower = query.lower()
     sparql = f"""
     SELECT ?s ?p ?o WHERE {{
