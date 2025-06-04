@@ -4,7 +4,7 @@ from pathlib import Path
 
 def load_ontology(file_path: str = None) -> Graph:
     base_dir = Path(__file__).resolve().parent
-    file_path = base_dir / (file_path or "../data/ontology.rdf")
+    file_path = base_dir / (file_path or "../data/ontologia_traducida.owl")
     file_path = file_path.resolve()
 
     if not file_path.exists():

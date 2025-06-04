@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory/"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Inventory="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory/"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory"/>
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#es_manipulado_por">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#manipula"/>
+        <rdfs:label xml:lang="es">es manipulado por</rdfs:label>
+        <rdfs:label xml:lang="en">is manipulated by</rdfs:label>
+        <rdfs:label xml:lang="fr">est manipulé par</rdfs:label>
+    </owl:ObjectProperty>
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#es_responsable_de">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#tiene_responsable_a"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Historial"/>
+        <rdfs:label xml:lang="es">es responsable de</rdfs:label>
+        <rdfs:label xml:lang="en">is responsible for</rdfs:label>
+        <rdfs:label xml:lang="fr">est responsable de</rdfs:label>
+    </owl:ObjectProperty>
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#manipula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias"/>
+        <rdfs:label xml:lang="es">manipula</rdfs:label>
+        <rdfs:label xml:lang="en">manipulates</rdfs:label>
+        <rdfs:label xml:lang="fr">manipule</rdfs:label>
+    </owl:ObjectProperty>
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#tiene_responsable_a">
+        <rdfs:label xml:lang="es">tiene responsable a</rdfs:label>
+        <rdfs:label xml:lang="en">has responsible for</rdfs:label>
+        <rdfs:label xml:lang="fr">a la charge de</rdfs:label>
+    </owl:ObjectProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Posición">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Posición</rdfs:label>
+        <rdfs:label xml:lang="en">Position</rdfs:label>
+        <rdfs:label xml:lang="fr">Position</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Accion_realizada">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Historial"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Acción realizada</rdfs:label>
+        <rdfs:label xml:lang="en">Action performed</rdfs:label>
+        <rdfs:label xml:lang="fr">Action réalisée</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Categoria">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Categoría</rdfs:label>
+        <rdfs:label xml:lang="en">Category</rdfs:label>
+        <rdfs:label xml:lang="fr">Catégorie</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Clave">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Clave</rdfs:label>
+        <rdfs:label xml:lang="en">Key</rdfs:label>
+        <rdfs:label xml:lang="fr">Clé</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Estado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Estado</rdfs:label>
+        <rdfs:label xml:lang="en">Status</rdfs:label>
+        <rdfs:label xml:lang="fr">Statut</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Estado_anterior">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Historial"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Estado anterior</rdfs:label>
+        <rdfs:label xml:lang="en">Previous status</rdfs:label>
+        <rdfs:label xml:lang="fr">Statut précédent</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Estado_posterior">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Historial"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Estado posterior</rdfs:label>
+        <rdfs:label xml:lang="en">Subsequent status</rdfs:label>
+        <rdfs:label xml:lang="fr">Statut ultérieur</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Fecha_hora">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Historial"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="es">Fecha y hora</rdfs:label>
+        <rdfs:label xml:lang="en">Date and time</rdfs:label>
+        <rdfs:label xml:lang="fr">Date et heure</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">ID</rdfs:label>
+        <rdfs:label xml:lang="en">ID</rdfs:label>
+        <rdfs:label xml:lang="fr">ID</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Item_afectado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Historial"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Ítem afectado</rdfs:label>
+        <rdfs:label xml:lang="en">Affected item</rdfs:label>
+        <rdfs:label xml:lang="fr">Article affecté</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Material">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Material</rdfs:label>
+        <rdfs:label xml:lang="en">Material</rdfs:label>
+        <rdfs:label xml:lang="fr">Matériel</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Nombre_persona">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Nombre de la persona</rdfs:label>
+        <rdfs:label xml:lang="en">Person name</rdfs:label>
+        <rdfs:label xml:lang="fr">Nom de la personne</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Permisos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Permisos</rdfs:label>
+        <rdfs:label xml:lang="en">Permissions</rdfs:label>
+        <rdfs:label xml:lang="fr">Permissions</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Peso">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="es">Peso</rdfs:label>
+        <rdfs:label xml:lang="en">Weight</rdfs:label>
+        <rdfs:label xml:lang="fr">Poids</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Responsabilidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Responsabilidad</rdfs:label>
+        <rdfs:label xml:lang="en">Responsibility</rdfs:label>
+        <rdfs:label xml:lang="fr">Responsabilité</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Ubicacion_existencia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Ubicación de existencia</rdfs:label>
+        <rdfs:label xml:lang="en">Existence location</rdfs:label>
+        <rdfs:label xml:lang="fr">Lieu d'existence</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Persona"/>
+        <rdfs:label xml:lang="es">Rol</rdfs:label>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+        <rdfs:label xml:lang="fr">Rôle</rdfs:label>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Almacen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Inventario"/>
+        <rdfs:label xml:lang="es">Almacén</rdfs:label>
+        <rdfs:label xml:lang="en">Warehouse</rdfs:label>
+        <rdfs:label xml:lang="fr">Entrepôt</rdfs:label>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Almacen"/>
+        <rdfs:label xml:lang="es">Existencias</rdfs:label>
+        <rdfs:label xml:lang="en">Stock</rdfs:label>
+        <rdfs:label xml:lang="fr">Stocks</rdfs:label>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Historial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Almacen"/>
+        <rdfs:label xml:lang="es">Historial</rdfs:label>
+        <rdfs:label xml:lang="en">History</rdfs:label>
+        <rdfs:label xml:lang="fr">Historique</rdfs:label>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Inventario">
+        <rdfs:label xml:lang="es">Inventario</rdfs:label>
+        <rdfs:label xml:lang="en">Inventory</rdfs:label>
+        <rdfs:label xml:lang="fr">Inventaire</rdfs:label>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Logística">
+        <rdfs:label xml:lang="es">  </rdfs:label>
+        <rdfs:label xml:lang="en">Logistics</rdfs:label>
+        <rdfs:label xml:lang="fr">Logistique</rdfs:label>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Persona">
+        <rdfs:label xml:lang="es">Persona</rdfs:label>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:label xml:lang="fr">Personne</rdfs:label>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Seguridad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Logística"/>
+        <rdfs:label xml:lang="es">Seguridad</rdfs:label>
+        <rdfs:label xml:lang="en">Security</rdfs:label>
+        <rdfs:label xml:lang="fr">Sécurité</rdfs:label>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Transporte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Logística"/>
+        <rdfs:label xml:lang="es">Transporte</rdfs:label>
+        <rdfs:label xml:lang="en">Transportation</rdfs:label>
+        <rdfs:label xml:lang="fr">Transport</rdfs:label>
+    </owl:Class>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Gerente_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol"/>
+        <rdfs:label xml:lang="es">Gerente 001</rdfs:label>
+        <rdfs:label xml:lang="en">Manager 001</rdfs:label>
+        <rdfs:label xml:lang="fr">Manager 001</rdfs:label>
+        <Inventory:es_responsable_de rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Supervisor_001"/>
+        <Inventory:Posición xml:lang="es">Gerente</Inventory:Posición>
+        <Inventory:Posición xml:lang="en">Manager</Inventory:Posición>
+        <Inventory:Posición xml:lang="fr">Manager</Inventory:Posición>
+        <untitled-ontology-10:ID>Usr_032</untitled-ontology-10:ID>
+        <untitled-ontology-10:Nombre_persona xml:lang="es">Jonatan Esprella</untitled-ontology-10:Nombre_persona>
+        <untitled-ontology-10:Nombre_persona xml:lang="en">Jonatan Esprella</untitled-ontology-10:Nombre_persona>
+        <untitled-ontology-10:Nombre_persona xml:lang="fr">Jonatan Esprella</untitled-ontology-10:Nombre_persona>
+        <untitled-ontology-10:Permisos xml:lang="es">Plataforma completa</untitled-ontology-10:Permisos>
+        <untitled-ontology-10:Permisos xml:lang="en">Full platform access</untitled-ontology-10:Permisos>
+        <untitled-ontology-10:Permisos xml:lang="fr">Accès complet à la plateforme</untitled-ontology-10:Permisos>
+        <untitled-ontology-10:Responsabilidad xml:lang="es">Delegar A Supervisor</untitled-ontology-10:Responsabilidad>
+        <untitled-ontology-10:Responsabilidad xml:lang="en">Delegate to Supervisor</untitled-ontology-10:Responsabilidad>
+        <untitled-ontology-10:Responsabilidad xml:lang="fr">Déléguer au superviseur</untitled-ontology-10:Responsabilidad>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Historico_202">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Historial"/>
+        <rdfs:label xml:lang="es">Histórico 202</rdfs:label>
+        <rdfs:label xml:lang="en">History 202</rdfs:label>
+        <rdfs:label xml:lang="fr">Historique 202</rdfs:label>
+        <untitled-ontology-10:Estado_anterior xml:lang="es">En almacen</untitled-ontology-10:Estado_anterior>
+        <untitled-ontology-10:Estado_anterior xml:lang="en">In warehouse</untitled-ontology-10:Estado_anterior>
+        <untitled-ontology-10:Estado_anterior xml:lang="fr">En entrepôt</untitled-ontology-10:Estado_anterior>
+        <untitled-ontology-10:Estado_posterior xml:lang="es">Agotado</untitled-ontology-10:Estado_posterior>
+        <untitled-ontology-10:Estado_posterior xml:lang="en">Out of stock</untitled-ontology-10:Estado_posterior>
+        <untitled-ontology-10:Estado_posterior xml:lang="fr">En rupture de stock</untitled-ontology-10:Estado_posterior>
+        <untitled-ontology-10:Fecha_hora rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-04T14:00:00</untitled-ontology-10:Fecha_hora>
+        <untitled-ontology-10:Item_afectado xml:lang="es">Mesa</untitled-ontology-10:Item_afectado>
+        <untitled-ontology-10:Item_afectado xml:lang="en">Table</untitled-ontology-10:Item_afectado>
+        <untitled-ontology-10:Item_afectado xml:lang="fr">Table</untitled-ontology-10:Item_afectado>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Historico_203">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Historial"/>
+        <rdfs:label xml:lang="es">Histórico 203</rdfs:label>
+        <rdfs:label xml:lang="en">History 203</rdfs:label>
+        <rdfs:label xml:lang="fr">Historique 203</rdfs:label>
+        <untitled-ontology-10:Estado_anterior xml:lang="es">En reserva</untitled-ontology-10:Estado_anterior>
+        <untitled-ontology-10:Estado_anterior xml:lang="en">In reserve</untitled-ontology-10:Estado_anterior>
+        <untitled-ontology-10:Estado_anterior xml:lang="fr">En réserve</untitled-ontology-10:Estado_anterior>
+        <untitled-ontology-10:Estado_posterior xml:lang="es">En Almacen</untitled-ontology-10:Estado_posterior>
+        <untitled-ontology-10:Estado_posterior xml:lang="en">In Warehouse</untitled-ontology-10:Estado_posterior>
+        <untitled-ontology-10:Estado_posterior xml:lang="fr">En entrepôt</untitled-ontology-10:Estado_posterior>
+        <untitled-ontology-10:Fecha_hora rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-04T14:00:00</untitled-ontology-10:Fecha_hora>
+        <untitled-ontology-10:Item_afectado xml:lang="es">Cargador</untitled-ontology-10:Item_afectado>
+        <untitled-ontology-10:Item_afectado xml:lang="en">Charger</untitled-ontology-10:Item_afectado>
+        <untitled-ontology-10:Item_afectado xml:lang="fr">Chargeur</untitled-ontology-10:Item_afectado>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Historico_230">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Historial"/>
+        <rdfs:label xml:lang="es">Histórico 230</rdfs:label>
+        <rdfs:label xml:lang="en">History 230</rdfs:label>
+        <rdfs:label xml:lang="fr">Historique 230</rdfs:label>
+        <untitled-ontology-10:Estado_anterior xml:lang="es">En almacen</untitled-ontology-10:Estado_anterior>
+        <untitled-ontology-10:Estado_anterior xml:lang="en">In warehouse</untitled-ontology-10:Estado_anterior>
+        <untitled-ontology-10:Estado_anterior xml:lang="fr">En entrepôt</untitled-ontology-10:Estado_anterior>
+        <untitled-ontology-10:Estado_posterior xml:lang="es">En Reserva</untitled-ontology-10:Estado_posterior>
+        <untitled-ontology-10:Estado_posterior xml:lang="en">In Reserve</untitled-ontology-10:Estado_posterior>
+        <untitled-ontology-10:Estado_posterior xml:lang="fr">En réserve</untitled-ontology-10:Estado_posterior>
+        <untitled-ontology-10:Fecha_hora rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-04T14:00:00</untitled-ontology-10:Fecha_hora>
+        <untitled-ontology-10:Item_afectado xml:lang="es">Parlante</untitled-ontology-10:Item_afectado>
+        <untitled-ontology-10:Item_afectado xml:lang="en">Speaker</untitled-ontology-10:Item_afectado>
+        <untitled-ontology-10:Item_afectado xml:lang="fr">Haut-parleur</untitled-ontology-10:Item_afectado>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Item_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias"/>
+        <rdfs:label xml:lang="es">Artículo 001</rdfs:label>
+        <rdfs:label xml:lang="en">Item 001</rdfs:label>
+        <rdfs:label xml:lang="fr">Article 001</rdfs:label>
+        <untitled-ontology-10:Categoria xml:lang="es">Electronicos</untitled-ontology-10:Categoria>
+        <untitled-ontology-10:Categoria xml:lang="en">Electronics</untitled-ontology-10:Categoria>
+        <untitled-ontology-10:Categoria xml:lang="fr">Électronique</untitled-ontology-10:Categoria>
+        <untitled-ontology-10:Clave>PCE923</untitled-ontology-10:Clave>
+        <untitled-ontology-10:Estado xml:lang="es">En stock</untitled-ontology-10:Estado>
+        <untitled-ontology-10:Estado xml:lang="en">In stock</untitled-ontology-10:Estado>
+        <untitled-ontology-10:Estado xml:lang="fr">En stock</untitled-ontology-10:Estado>
+        <untitled-ontology-10:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</untitled-ontology-10:Peso>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Item_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias"/>
+        <rdfs:label xml:lang="es">Artículo 002</rdfs:label>
+        <rdfs:label xml:lang="en">Item 002</rdfs:label>
+        <rdfs:label xml:lang="fr">Article 002</rdfs:label>
+        <untitled-ontology-10:Categoria xml:lang="es">&quot;Hogar&quot;</untitled-ontology-10:Categoria>
+        <untitled-ontology-10:Categoria xml:lang="en">&quot;Home&quot;</untitled-ontology-10:Categoria>
+        <untitled-ontology-10:Categoria xml:lang="fr">&quot;Maison&quot;</untitled-ontology-10:Categoria>
+        <untitled-ontology-10:Clave>PCH232</untitled-ontology-10:Clave>
+        <untitled-ontology-10:Estado xml:lang="es">En Reserva</untitled-ontology-10:Estado>
+        <untitled-ontology-10:Estado xml:lang="en">In Reserve</untitled-ontology-10:Estado>
+        <untitled-ontology-10:Estado xml:lang="fr">En réserve</untitled-ontology-10:Estado>
+        <untitled-ontology-10:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</untitled-ontology-10:Peso>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Item_003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-10#Existencias"/>
+        <rdfs:label xml:lang="es">Artículo 003</rdfs:label>
+        <rdfs:label xml:lang="en">Item 003</rdfs:label>
+        <rdfs:label xml:lang="fr">Article 003</rdfs:label>
+        <untitled-ontology-10:Categoria xml:lang="es">Electronico</untitled-ontology-10:Categoria>
+        <untitled-ontology-10:Categoria xml:lang="en">Electronic</untitled-ontology-10:Categoria>
+        <untitled-ontology-10:Categoria xml:lang="fr">Électronique</untitled-ontology-10:Categoria>
+        <untitled-ontology-10:Clave>PCE123</untitled-ontology-10:Clave>
+        <untitled-ontology-10:Estado xml:lang="es">En almacen</untitled-ontology-10:Estado>
+        <untitled-ontology-10:Estado xml:lang="en">In warehouse</untitled-ontology-10:Estado>
+        <untitled-ontology-10:Estado xml:lang="fr">En entrepôt</untitled-ontology-10:Estado>
+        <untitled-ontology-10:Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</untitled-ontology-10:Peso>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Operador_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol"/>
+        <rdfs:label xml:lang="es">Operador 001</rdfs:label>
+        <rdfs:label xml:lang="en">Operator 001</rdfs:label>
+        <rdfs:label xml:lang="fr">Opérateur 001</rdfs:label>
+        <Inventory:manipula rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Item_001"/>
+        <Inventory:manipula rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Item_002"/>
+        <Inventory:manipula rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Item_003"/>
+        <untitled-ontology-10:ID>Usr_392</untitled-ontology-10:ID>
+        <untitled-ontology-10:Nombre_persona xml:lang="es">Roberto Caseres</untitled-ontology-10:Nombre_persona>
+        <untitled-ontology-10:Nombre_persona xml:lang="en">Roberto Caseres</untitled-ontology-10:Nombre_persona>
+        <untitled-ontology-10:Nombre_persona xml:lang="fr">Roberto Caseres</untitled-ontology-10:Nombre_persona>
+        <untitled-ontology-10:Permisos xml:lang="es">Existencias Historial Transporte</untitled-ontology-10:Permisos>
+        <untitled-ontology-10:Permisos xml:lang="en">Stock History Transportation</untitled-ontology-10:Permisos>
+        <untitled-ontology-10:Permisos xml:lang="fr">Stocks Historique Transport</untitled-ontology-10:Permisos>
+        <untitled-ontology-10:Responsabilidad xml:lang="es">Manipular Existencias</untitled-ontology-10:Responsabilidad>
+        <untitled-ontology-10:Responsabilidad xml:lang="en">Manipulate Stock</untitled-ontology-10:Responsabilidad>
+        <untitled-ontology-10:Responsabilidad xml:lang="fr">Manipuler les stocks</untitled-ontology-10:Responsabilidad>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Supervisor_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Rol"/>
+        <rdfs:label xml:lang="es">Supervisor 001</rdfs:label>
+        <rdfs:label xml:lang="en">Supervisor 001</rdfs:label>
+        <rdfs:label xml:lang="fr">Superviseur 001</rdfs:label>
+        <Inventory:es_responsable_de rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Operador_001"/>
+        <Inventory:manipula rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Historico_202"/>
+        <Inventory:manipula rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Historico_203"/>
+        <Inventory:manipula rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/2/Inventory#Historico_230"/>
+        <untitled-ontology-10:ID>Usr_032</untitled-ontology-10:ID>
+        <untitled-ontology-10:Nombre_persona xml:lang="es">Fernanda Luizaga</untitled-ontology-10:Nombre_persona>
+        <untitled-ontology-10:Nombre_persona xml:lang="en">Fernanda Luizaga</untitled-ontology-10:Nombre_persona>
+        <untitled-ontology-10:Nombre_persona xml:lang="fr">Fernanda Luizaga</untitled-ontology-10:Nombre_persona>
+        <untitled-ontology-10:Permisos xml:lang="es">Historicos Existencias Seguridad Transporte</untitled-ontology-10:Permisos>
+        <untitled-ontology-10:Permisos xml:lang="en">History Stock Security Transportation</untitled-ontology-10:Permisos>
+        <untitled-ontology-10:Permisos xml:lang="fr">Historique Stocks Sécurité Transport</untitled-ontology-10:Permisos>
+        <untitled-ontology-10:Responsabilidad xml:lang="es">Supervisar Operador</untitled-ontology-10:Responsabilidad>
+        <untitled-ontology-10:Responsabilidad xml:lang="en">Supervise Operator</untitled-ontology-10:Responsabilidad>
+        <untitled-ontology-10:Responsabilidad xml:lang="fr">Superviser l'opérateur</untitled-ontology-10:Responsabilidad>
+    </owl:NamedIndividual>
+</rdf:RDF>

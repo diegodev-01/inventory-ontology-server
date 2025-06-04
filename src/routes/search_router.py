@@ -12,7 +12,7 @@ g = load_ontology()
 
 @router.get("/search")
 def search_ontology(query: str = Query(..., description="Search term")):
-    results = search_ontology_by_label(query)
+    results = search_ontology_by_label(query, path="../data/ontology_poblada.rdf", lang_code="es")
     return {"results": results}
 
 
